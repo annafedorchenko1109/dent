@@ -1,0 +1,136 @@
+.search-page {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+
+    &__select {
+	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 0px 14px;
+	background-color: #f3f3f3;
+}
+&__title {
+	color: #666666;
+	font-weight: 300;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	span {
+		margin: 0px 13px;
+		border-bottom: 1px dashed;
+		&:last-child {
+			display: none;
+		}
+	}
+	&::before {
+		content: "";
+		width: 17px;
+		height: 17px;
+		background: url("../icons/search_page.png") 0 0 no-repeat;
+	}
+	&::after {
+		content: "";
+		-webkit-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+		width: 10px;
+		height: 10px;
+		background: url("../icons/search_page_arrows.png") 0 0 no-repeat;
+	}
+	&._categories {
+		span {
+			display: none;
+			&:last-child {
+				display: block;
+			}
+		}
+	}
+	&._active {
+		&::after {
+			-webkit-transform: rotate(-180deg);
+			-ms-transform: rotate(-180deg);
+			transform: rotate(-180deg);
+		}
+	}
+}
+&__categories {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+}
+&__input {
+	border: 2px solid #f2f2f2;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	.input {
+		height: 100%;
+	}
+}
+}
+.categories-search {
+	border: 1px solid #f3f3f3;
+	background-color: #fff;
+	display: none;
+	&::after {
+		content: "";
+		background-color: #f68038;
+		height: 4px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+	}
+
+    &__column {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 1 33.333%;
+	flex: 0 1 33.333%;
+	padding: 27px 40px;
+	border-right: 1px solid #f3f3f3;
+	&:last-child {
+		border: 0;
+	}
+}
+&__list {
+	li {
+		margin: 0px 0px 20px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+		.categories-search__checkbox{
+			.checkbox__input{
+				.checkbox__text::after{
+					display: none;
+				}
+
+			}
+		}
+	}
+}
+&__checkbox {
+	.checkbox__input {
+		&:checked {
+			& + .checkbox__text {
+				color: #f68038;
+			}
+		}
+	}
+	.checkbox__text {
+		color: #999;
+		&::before {
+			display: none;
+		}
+	}
+}
+}

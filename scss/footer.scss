@@ -1,0 +1,134 @@
+.footer{
+&__column {
+	margin: 0px 0px 25px 0px;
+	&:first-child {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+}
+&__bottom {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 10px 0;
+	border-top: 1px solid #dadada;
+	text-align: center;
+}
+
+&__copy {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	color: #999999;
+	font-size: 12px;
+	font-weight: 300;
+}
+&__payments {
+	img {
+		max-width: 100%;
+	}
+}
+
+.block-footer {
+	padding: 0px 0px 20px 0px;
+    text-align: center;
+    
+    &__column {
+        &:first-child {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 165px;
+            flex: 0 0 165px;
+        }
+        &:last-child {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+        }
+    }
+
+    &__phones {
+        padding: 0px 0px 0px 15px;
+        p {
+            margin: 0px 0px 10px 0px;
+            &:last-child {
+                margin: 0px 0px 0px 0px;
+            }
+        }
+    }
+
+    &__phone {
+        color: #333333;
+        font-weight: 900;
+    }
+}
+
+.logo-footer {
+	display: inline-block;
+	margin: 0px 0px 30px 0px;
+}
+.delivery-footer__title {
+	color: #999999;
+	font-size: 14px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.35px;
+	margin: 0px 0px 10px 0px;
+}
+.delivery-footer__items {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0px -15px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.delivery-footer__item {
+	padding: 15px;
+}
+
+
+.widgets-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0px -15px;
+}
+&__column {
+	padding: 0px 15px;
+	img {
+		max-width: 100%;
+	}
+}
+
+.social-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+    align-items: center;
+
+
+&__item {
+	margin: 0px 0px 0px 10px;
+}
+
+}
+}
+
+
+
+
+
+
+
+
+
